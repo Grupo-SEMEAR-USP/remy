@@ -32,29 +32,39 @@ void setup() {
 void loop() {
 
   int ha, hb, hc;
+  int contador = 0;
 
   if (mudou_ha) {
     mudou_ha = false;
+    contador++;
     ha = digitalRead(ha_pin);
     Serial.print(ha );
     Serial.print(hb );
-    Serial.print(hc);
+    Serial.println(hc);
+    Serial.print("Numero de mudancas: ");
+    Serial.println(contador);
   }
 
   if (mudou_hb) {
     mudou_hb = false;
+    contador++;
     hb = digitalRead(hb_pin);
     Serial.print(ha );
     Serial.print(hb );
-    Serial.print(hc);
+    Serial.println(hc);
+    Serial.print("Numero de mudancas: ");
+    Serial.println(contador);
   }
 
   if (mudou_hc) {
     mudou_hc = false;
+    contador++;
     hc = digitalRead(hc_pin);
     Serial.print(ha );
     Serial.print(hb );
-    Serial.print(hc);
+    Serial.println(hc);
+    Serial.print("Numero de mudancas: ");
+    Serial.println(contador);
 
   }
 }
