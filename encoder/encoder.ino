@@ -61,7 +61,7 @@ void setup() {
 void loop() {
 
   analogWrite(pwm1, 20); //Controlar velocidade do motor 1      <--------------------- AQUI MUDAS AS VELOCIDADESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-  analogWrite(pwm2, 40); //Controlar velocidade do motor 2
+  analogWrite(pwm2, 40); //Controlar velocidade do motor 2      (Pelo amor de deus nao passem de 80)
 
   unsigned long agora = millis();
 
