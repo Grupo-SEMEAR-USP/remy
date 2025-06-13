@@ -36,7 +36,7 @@ void IRAM_ATTR mudar_hc2() {
 
 void setup() {
   
-  Serial.begin(9600);
+  Serial.begin(9600); //Nao esquecer de colocar o monitor serial em 9600
 
   pinMode(ha1_pin, INPUT);
   pinMode(hb1_pin, INPUT);
